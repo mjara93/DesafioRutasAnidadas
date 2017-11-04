@@ -1,0 +1,7 @@
+<h1>lista de usuarios</h1>
+</br>
+<ul>
+  <%= @users.each do |user| %>
+  <li><%= user.name %></li> | <%= link_to 'editar' %>
+  <% end %>
+</ul>
